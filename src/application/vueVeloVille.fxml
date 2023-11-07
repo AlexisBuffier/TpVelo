@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VeloVilleController">
+   <center>
+      <Pane prefHeight="750.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="veloVille" fitHeight="477.0" fitWidth="755.0" layoutX="14.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@velo-ville.jpg" />
+               </image>
+            </ImageView>
+            <Text fx:id="textIntro" layoutX="846.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choisissez la couleur de votre cadre et de votre fourche" wrappingWidth="243.287109375" />
+            <Text fx:id="textClassique" layoutX="846.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classique -400€" wrappingWidth="134.6708984375" />
+            <Text fx:id="textCustom" fill="RED" layoutX="846.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="custom +0€" wrappingWidth="53.6708984375" />
+            <Text fx:id="textColorisBrillant" layoutX="846.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coloris 1 - brillant" wrappingWidth="118.6708984375" />
+            <Text fx:id="textPerso" layoutX="840.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Souhaitez vous un texte personnalisé ?" wrappingWidth="281.7353515625" />
+            <TextArea fx:id="fieldPerso" layoutX="843.0" layoutY="421.0" prefHeight="72.0" prefWidth="263.0" promptText="Votre texte ..." />
+            <RadioButton fx:id="btnOui" layoutX="841.0" layoutY="387.0" mnemonicParsing="false" text="Oui">
+               <toggleGroup>
+                  <ToggleGroup fx:id="OuiNon" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="btnNon" layoutX="839.0" layoutY="508.0" mnemonicParsing="false" text="Non" toggleGroup="$OuiNon" />
+            <Button fx:id="btnRed" layoutX="840.0" layoutY="155.0" mnemonicParsing="false" onMouseClicked="#onClickRed" prefHeight="31.0" prefWidth="53.0" />
+            <Button fx:id="btnBlue" layoutX="935.0" layoutY="155.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="57.0" />
+            <Button fx:id="btnGreen" layoutX="1032.0" layoutY="155.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="57.0" />
+            <Button fx:id="btnYellow" layoutX="846.0" layoutY="296.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="53.0" />
+            <Button fx:id="btnBlack" layoutX="935.0" layoutY="296.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="53.0" />
+            <Button fx:id="btnPink" layoutX="1034.0" layoutY="296.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="53.0" />
+            <TextField fx:id="fieldPrix" editable="false" layoutX="582.0" layoutY="537.0" />
+            <Text fx:id="textPrix" layoutX="529.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix :" wrappingWidth="41.494140625" />
+         </children></Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VueController">
+   <center>
+      <Pane prefHeight="600.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView id="veloVille" fx:id="veloVille" accessibleRole="BUTTON" fitHeight="221.0" fitWidth="321.0" layoutX="82.0" layoutY="56.0" onMouseClicked="#onClickVeloVille" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@velo-ville.jpg" />
+               </image>
+            </ImageView>
+            <ImageView id="veloCourse" fx:id="veloCourse" accessibleRole="BUTTON" fitHeight="221.0" fitWidth="321.0" layoutX="82.0" layoutY="313.0" onMouseClicked="#onClickVeloCourse" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@velo-course.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
